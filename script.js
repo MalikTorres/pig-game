@@ -13,12 +13,13 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 const btnNewGame = document.querySelector('.btn--new');
 
+
 // Starting conditions
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
-const scores = [0, 0];
+let scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
@@ -77,8 +78,5 @@ btnHold.addEventListener('click', function () {
 
 btnNewGame.addEventListener('click', function () {
   diceEl.classList.add('hidden');
-
   
-
-
 });
